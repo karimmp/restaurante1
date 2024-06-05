@@ -57,6 +57,25 @@ const dishes = [
       imageUrl: "https://images.pexels.com/photos/372886/pexels-photo-372886.jpeg?auto=compress&cs=tinysrgb&w=800"
     }
   ];
+
+  // Seleccionamos los elementos necesarios
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('.nav-menu');
+
+// Función para alternar la visibilidad del menú de navegación
+function toggleNavMenu() {
+  navMenu.classList.toggle('show');
+}
+
+// Evento clic en el menú de hamburguesa
+hamburgerMenu.addEventListener('click', toggleNavMenu);
+
+// Cerrar el menú de navegación al hacer clic fuera de él
+window.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-menu') && !e.target.closest('.hamburger-menu')) {
+    navMenu.classList.remove('show');
+  }
+});
   
   // Función para generar las tarjetas de los platillos
   function createDishCards(dishes) {
