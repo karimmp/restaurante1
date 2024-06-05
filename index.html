@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincón Mexicano</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="https://thumbs.dreamstime.com/b/mexican-burrito-hand-written-lettering-logo-label-badge-sign-emblem-use-fast-food-cafe-cuisine-modern-brush-calligraphy-155177254.jpg" alt="El Rincón Mexicano"></a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Menú</a></li>
+                    <li><a href="#">Reservar</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Sabores Auténticos de México</h1>
+                <p>Descubre la verdadera esencia de la comida mexicana en nuestro restaurante.</p>
+                <a href="#" class="btn">Reservar Ahora</a>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Nuestro Menú</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todo</button>
+                <button class="filter-btn" data-filter="antojitos">Antojitos</button>
+                <button class="filter-btn" data-filter="platos-fuertes">Platos Fuertes</button>
+                <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+                <button class="filter-btn" data-filter="postres">Postres</button>
+            </div>
+            <div class="menu-items"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>El Rincón Mexicano</h3>
+                <p>Disfrutamos de la auténtica cocina mexicana en un ambiente cálido y acogedor.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ubicación</h3>
+                <p>123 Calle Principal</p>
+                <p>Ciudad, Estado 12345</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 El Rincón Mexicano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
